@@ -67,7 +67,7 @@
 }
 
 .visual-title .cta {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 20rem;
@@ -103,11 +103,11 @@ main > section:last-child {
 
 .business-list li {
   border: 1px solid var(--black30);
-  flex: 1 1 auto;
-  width: 28rem;
-  width: 23.7288%;
+  flex: 1 1 clamp(28rem, 20vw, 47.4rem);
+  /* width: 28rem;
+  width: 23.7288%; */
 
-  height: 30.2rem;
+  min-height: 30.2rem;
   padding: 2.8rem 3.2rem;
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.05);
 }
@@ -263,6 +263,7 @@ main > section:last-child {
   .visual-title {
     width: 46rem;
     width: 47.5207%;
+    left: 6%;
   }
 
   .business-list {
@@ -270,8 +271,8 @@ main > section:last-child {
   }
 
   .business-list li {
-    width: 47.4rem;
-    width: 48.9669%;
+    /* width: 47.4rem;
+    width: 48.9669%; */
     height: 28rem;
   }
 
@@ -287,5 +288,46 @@ main > section:last-child {
   .news-con figure {
     width: 47.4rem;
     width: 48.9669%;
+  }
+}
+
+@media (max-width: 900px) {
+  .visual-title {
+    width: 86%;
+  }
+
+  .works-list li {
+    flex-basis: 100%;
+  }
+  .news-con {
+    flex-direction: column;
+  }
+
+  .news-con .news-text,
+  .news-con figure {
+    width: 100%;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 500px) {
+  .hero {
+    height: 48rem;
+    height: calc(100vh - 10rem); /* 헤더의 크기를 뺀 높이 */
+  }
+
+  .visual-title {
+    width: 100%;
+    text-align: center;
+    left: 0%;
+  }
+
+  .visual-title h2 {
+    font-size: 3rem;
+  }
+
+  .business-list li {
+    height: initial; /* 초기화 */
+    height: auto; /* 초기화 */
   }
 }
