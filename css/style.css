@@ -225,6 +225,7 @@ main > section:last-child {
 .column h5 + p {
   font-size: 1.6rem;
   margin-top: 1.8rem;
+
   /* column-count: 2;
   column-gap: 4rem;
   text-align: justify; */
@@ -238,27 +239,4 @@ main > section:last-child {
 
 .column p + p strong {
   display: block;
-}
-
-/* footer */
-.footer {
-  background: #333;
-  color: var(--white60);
-  padding: 5.2rem 0;
-}
-
-.foot-con {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-.foot-text {
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 1.5;
-}
-
-.foot-text p + p {
-  margin-top: 0.8rem;
 }
