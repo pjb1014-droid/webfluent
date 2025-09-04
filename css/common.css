@@ -138,3 +138,28 @@ body {
     filter: blur(0px);
   }
 }
+
+/* 반응형 디자인 */
+
+/* 테블릿 */
+@media (max-width: 1024px) {
+  .inner {
+    width: 968px;
+    width: 94.5313%;
+  }
+
+  .header nav {
+    height: 10rem;
+  }
+
+  .gnb {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url(../img/ico-menu.svg) no-repeat 50% 50%;
+  }
+}

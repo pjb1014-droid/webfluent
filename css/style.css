@@ -44,7 +44,9 @@
   transform: translateY(-50%);
   /* background: red; */
   color: #fff;
-  width: 69em;
+
+  width: 69rem;
+  width: 58.4746%;
 }
 
 .visual-title h2 {
@@ -103,6 +105,8 @@ main > section:last-child {
   border: 1px solid var(--black30);
   flex: 1 1 auto;
   width: 28rem;
+  width: 23.7288%;
+
   height: 30.2rem;
   padding: 2.8rem 3.2rem;
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.05);
@@ -165,6 +169,9 @@ main > section:last-child {
   font-weight: 500;
   font-size: 2.4rem;
   text-align: center;
+
+  /* background: pink; */
+  width: 90%;
 }
 
 .works-list li p strong {
@@ -181,10 +188,13 @@ main > section:last-child {
 .news-con {
   display: flex;
   gap: 6rem;
+  gap: 5.0847%;
 }
 
 .news-con .news-text {
   width: 48rem;
+  width: 40.678%;
+
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
@@ -206,6 +216,7 @@ main > section:last-child {
 
 .news-con figure {
   width: 64rem;
+  width: 54.2373%;
 }
 
 /* column */
@@ -239,4 +250,42 @@ main > section:last-child {
 
 .column p + p strong {
   display: block;
+}
+
+/* 반응형 디자인 */
+
+/* 테블릿 */
+@media (max-width: 1024px) {
+  .hero {
+    height: 64rem;
+  }
+
+  .visual-title {
+    width: 46rem;
+    width: 47.5207%;
+  }
+
+  .business-list {
+    flex-wrap: wrap;
+  }
+
+  .business-list li {
+    width: 47.4rem;
+    width: 48.9669%;
+    height: 28rem;
+  }
+
+  .news-con {
+    gap: 2rem;
+  }
+
+  .news-con .news-text {
+    width: 47.4rem;
+    width: 48.9669%;
+  }
+
+  .news-con figure {
+    width: 47.4rem;
+    width: 48.9669%;
+  }
 }
